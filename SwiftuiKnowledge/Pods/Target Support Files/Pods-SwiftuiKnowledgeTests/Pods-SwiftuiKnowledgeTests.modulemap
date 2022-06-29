@@ -1,0 +1,6 @@
+framework module Pods_SwiftuiKnowledgeTests {
+  umbrella header "Pods-SwiftuiKnowledgeTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
