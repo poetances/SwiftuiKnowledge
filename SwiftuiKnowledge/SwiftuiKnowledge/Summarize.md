@@ -312,3 +312,11 @@ Embedded Framework 开发中使用的动态库会被放入ipa下的framework目�
 1、UIKit和SwiftUI混合开发。
     UIKit使用SwiftUI，通过UIHostingController进行包装。
     SwiftUi使用UIKit，通过UIViewRepresentable来添加。
+
+2、Github现在不让使用密码登录，需要使用token登录，这里就有点麻烦，登录还好，但是如果要进行push和pull的认证就很麻烦。所以我们最好使用ssh进行认证。
+    首先要github上配置ssh。 其实配置完成后，mac电脑下面~/.ssh里面会有isa_xxx的文件，同时github -> setting -> ssh上面就会有相应的key。
+    这样我们在配置项目，时候就可以将url 替换为 git:xxxx 这样的路径。不要使用https。
+    
+6.28
+1、PropertyWrapper。是swift新增的特性。其目的就是移除一些多余、重复的代码。
+

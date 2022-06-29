@@ -20,6 +20,10 @@ struct SDKnowledgePage: View {
                         PushPage(showSelf: $isActive)
                     }.padding()
 
+                    NavigationLink("StatePage") {
+                        StatePage()
+                    }.padding(.bottom)
+
                     NavigationLink {
                         BindingPage()
                     } label: {
@@ -55,15 +59,23 @@ struct SDKnowledgePage: View {
                     NavigationLink("TaskPage") {
                         TaskPage()
                     }.padding(.bottom)
+                }
 
+                Group {
                     NavigationLink("PreferencePage") {
                         PreferencePage()
                     }.padding(.bottom)
+
+                    NavigationLink("GeometryReaderPage") {
+                        GeometryReaderPage()
+                    }.padding(.bottom)
+
+                    NavigationLink("PropertyWrapperPage") {
+                        PropertyWrapperPage()
+                    }.padding(.bottom)
                 }
 
-                NavigationLink("GeometryReaderPage") {
-                    GeometryReaderPage()
-                }.padding(.bottom)
+
 
             }
         }
